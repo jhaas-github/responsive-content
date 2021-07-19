@@ -11,7 +11,7 @@ body {
 .content-slider {
     max-width: 1200px;
     margin: 0 auto; // center horizontal
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(214, 184, 184);
 
     .gallery {
         padding: 10px 0 10px 0;
@@ -22,13 +22,39 @@ body {
             width: 200px; // Mobile
             height: 325px; // Mobile
             margin-right: 40px;
-            background-color: #fff;
+            background-color: rgb(231, 224, 224);
 
             .gallery-container {
                 height: 100%;
 
                 .content-container {
                     height: 100%;
+                    overflow: hidden;
+
+                    .content-container-top {
+                        height: 40%;
+                        background-color: red;
+
+                        img {
+                            height: 100%;
+                            background-size: cover;
+                        }
+                    }
+
+                    .content-container-bottom {
+                        height: 60%;
+                        padding: 0 8px 0 8px;
+                        background-color: #fff;
+                        overflow: hidden; // Hidden because the P tag adds padding and moves te box.
+
+                        .text-box {
+                            height: 100%;
+
+                            p {
+                                font-size: 0.83rem;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -41,7 +67,7 @@ body {
     }
 
     .flickity-prev-next-button .arrow {
-        fill: red; // Don't want to display? fill: none;
+        fill: #000; // Don't want to display? fill: none;
     }
 
     .flickity-prev-next-button.previous {

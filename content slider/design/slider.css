@@ -12,7 +12,7 @@ body {
 .content-slider {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #dfdfdf;
+  background-color: #d6b8b8;
 }
 
 .content-slider .gallery {
@@ -25,7 +25,7 @@ body {
   width: 200px;
   height: 325px;
   margin-right: 40px;
-  background-color: #fff;
+  background-color: #e7e0e0;
 }
 
 .content-slider .gallery .gallery-cell .gallery-container {
@@ -34,6 +34,32 @@ body {
 
 .content-slider .gallery .gallery-cell .gallery-container .content-container {
   height: 100%;
+  overflow: hidden;
+}
+
+.content-slider .gallery .gallery-cell .gallery-container .content-container .content-container-top {
+  height: 40%;
+  background-color: red;
+}
+
+.content-slider .gallery .gallery-cell .gallery-container .content-container .content-container-top img {
+  height: 100%;
+  background-size: cover;
+}
+
+.content-slider .gallery .gallery-cell .gallery-container .content-container .content-container-bottom {
+  height: 60%;
+  padding: 0 8px 0 8px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.content-slider .gallery .gallery-cell .gallery-container .content-container .content-container-bottom .text-box {
+  height: 100%;
+}
+
+.content-slider .gallery .gallery-cell .gallery-container .content-container .content-container-bottom .text-box p {
+  font-size: 0.83rem;
 }
 
 .content-slider .flickity-prev-next-button,
@@ -42,7 +68,7 @@ body {
 }
 
 .content-slider .flickity-prev-next-button .arrow {
-  fill: red;
+  fill: #000;
 }
 
 .content-slider .flickity-prev-next-button.previous {
