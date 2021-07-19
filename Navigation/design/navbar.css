@@ -9,4 +9,65 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+header .topnav-container {
+  position: relative;
+  width: auto;
+  padding: 30px;
+  background-color: #000;
+}
+
+header .topnav-container .topnav {
+  overflow: hidden;
+}
+
+header .topnav-container .topnav a {
+  padding: 6px;
+  color: #d9dbdb;
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Arimo', sans-serif;
+}
+
+header .topnav-container .topnav a:hover {
+  color: #E50914;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+header .topnav-container .topnav .topnav-center a {
+  float: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .topnav-container .topnav .topnav-center a img {
+  height: 70px;
+}
+
+header .topnav-container .topnav .topnav-center a:hover {
+  opacity: 0.9;
+}
+
+header .topnav-container .topnav .topnav-right {
+  float: right;
+}
+
+header .topnav-container .topnav .mobile {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  header .topnav-container .topnav .mobile {
+    display: inline;
+  }
+  header .topnav-container .topnav .desktop {
+    display: none;
+  }
+}
 /*# sourceMappingURL=navbar.css.map */

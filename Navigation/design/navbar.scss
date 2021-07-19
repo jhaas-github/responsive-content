@@ -11,3 +11,75 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    .topnav-container {
+        position: relative;
+        width: auto;
+        padding: 30px;
+        background-color: #000;
+
+        .topnav {
+            overflow: hidden;
+
+            a {
+                padding: 6px;
+                color: #d9dbdb;
+                font-size: 1.15rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: 'Arimo', sans-serif;
+            }
+
+            a:hover {
+                color: #E50914;
+                transition: 0.25s ease-in-out;
+            }
+
+            .topnav-center a {
+                float: none;
+                padding: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                img {
+                    height: 70px;
+                }
+            }
+
+            .topnav-center a:hover {
+                opacity: 0.9;
+            }
+
+            .topnav-right {
+                float: right;
+            }
+
+            // media queries for desktop will be done later on. Adding that will change the icons to text.
+            // For now, don't display the text.
+            .mobile {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    header {
+        .topnav-container {
+            .topnav {
+                // As the width of the screen gets wider, text will be displayed.
+                .mobile {
+                    display: inline;
+                }
+
+                // As the width of the screen gets wider, icons won't be displayed.
+                .desktop {
+                    display: none;
+                }
+            }
+        }
+    }
+}
