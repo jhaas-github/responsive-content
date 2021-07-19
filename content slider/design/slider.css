@@ -36,6 +36,23 @@ body {
   height: 100%;
 }
 
+.content-slider .flickity-prev-next-button,
+.content-slider .flickity-prev-next-button:hover {
+  background: none;
+}
+
+.content-slider .flickity-prev-next-button .arrow {
+  fill: red;
+}
+
+.content-slider .flickity-prev-next-button.previous {
+  left: 10px;
+}
+
+.content-slider .flickity-prev-next-button.next {
+  right: 10px;
+}
+
 @media (min-width: 768px) {
   .content-slider .gallery .gallery-cell {
     width: 250px;

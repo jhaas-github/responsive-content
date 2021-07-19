@@ -33,6 +33,24 @@ body {
             }
         }
     }
+
+    // Flickity styling
+    .flickity-prev-next-button,
+    .flickity-prev-next-button:hover {
+        background: none; // Remove background around arrows
+    }
+
+    .flickity-prev-next-button .arrow {
+        fill: red; // Don't want to display? fill: none;
+    }
+
+    .flickity-prev-next-button.previous {
+        left: 10px; // Placement of previous button
+    }
+
+    .flickity-prev-next-button.next {
+        right: 10px; // Placement of next button
+    }
 }
 
 @media (min-width: 768px) {
