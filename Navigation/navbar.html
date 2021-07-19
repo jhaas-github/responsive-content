@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="design/navbar.css">
     <title>Navigation</title>
 </head>
+
 <body>
 
     <header>
@@ -20,29 +22,67 @@
                         <a href="#logo"><img src="netflixcircle.png" alt=""></a>
                     </div>
 
-                <!-- These links will be left aligned by default. -->
-                <a href="#menuMobile" class="desktop"><i class="bi bi-three-dots-vertical"></i></a>
-                <a href="#home" class="mobile">home</a>
-                <a href="#shop" class="mobile">shop</a>
+                    <!-- These links will be left aligned by default. -->
+                    <a href="#menuMobile" class="desktop" onclick="openNav()"><i class="bi bi-three-dots-vertical"></i></a>
+                    <a href="#home" class="mobile">home</a>
+                    <a href="#shop" class="mobile">shop</a>
 
-                <div class="topnav-right">
-                    <a href="#searchMobile" class="desktop" onclick="openSearch()"><i class="bi bi-search"></i></a>
-                    <a href="#cartMobile" class="desktop"><i class="bi bi-bag"></i></a>
-                    <a href="#login" class="mobile">login</a>
-                    <a href="#searchDesktop" class="mobile" onclick="openSearch()">search</a>
-                    <a href="#cartDesktop" class="mobile">cart</a>
+                    <div class="topnav-right">
+                        <a href="#searchMobile" class="desktop" onclick="openSearch()"><i class="bi bi-search"></i></a>
+                        <a href="#cartMobile" class="desktop"><i class="bi bi-bag"></i></a>
+                        <a href="#login" class="mobile">login</a>
+                        <a href="#searchDesktop" class="mobile" onclick="openSearch()">search</a>
+                        <a href="#cartDesktop" class="mobile">cart</a>
+                    </div>
+                </div>
+
+                <div class="search-container">
+                    <div id="searchBar" class="search-bar">
+                        <input type="search" class="input-search" placeholder="search ..">
+                        <a href="#search" class="closebtn" onclick="closeSearch()">&times;</a>
+                    </div>
+                </div>
+
+                <div class="sidenav-container">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#home">home</a>
+
+                        <button class="accordion">shop</button>
+                        <div class="panel">
+                            <p>
+                                <ul>
+                                    <li><a href="#deskpads">deskpads</i></a></li>
+                                    <li><a href="#keyboards">keyboards</a></li>
+                                    <li><a href="#keycaps">keycaps</a></li>
+                                    <li><a href="#switches">switches</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                        <button class="accordion">info</button>
+                        <div class="panel">
+                            <p>
+                                <ul>
+                                    <li><a href="#faq">FAQ</a></li>
+                                    <li><a href="#updates">updates</a></li>
+                                    <li><a href="#policies">policies</a></li>
+                                </ul>
+                            </p>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <a href="#account">account</a>
+                        <a href="#login">log in</a>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="search-container">
-                <div id="searchBar" class="search-bar">
-                    <input type="search" class="input-search" placeholder="search ..">
-                    <a href="#search" class="closebtn" onclick="closeSearch()">&times;</a>
-                </div>
-            </div>
         </div>
     </header>
-    
+
     <script src="javascript/script.js"></script>
 </body>
-</html> 
+
+</html>

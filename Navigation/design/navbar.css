@@ -13,7 +13,7 @@ body {
 header .topnav-container {
   position: relative;
   width: auto;
-  padding: 30px;
+  padding: 20px;
   background-color: #000;
 }
 
@@ -24,7 +24,7 @@ header .topnav-container .topnav {
 header .topnav-container .topnav a {
   padding: 6px;
   color: #d9dbdb;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Arimo', sans-serif;
@@ -47,11 +47,11 @@ header .topnav-container .topnav .topnav-center a {
 }
 
 header .topnav-container .topnav .topnav-center a img {
-  height: 70px;
+  height: 50px;
 }
 
 header .topnav-container .topnav .topnav-center a:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 header .topnav-container .topnav .topnav-right {
@@ -84,7 +84,7 @@ header .search-container .search-bar {
 }
 
 header .search-container .search-bar .input-search {
-  height: 82px;
+  height: 70px;
   width: 70vw;
   border: none;
   outline: none;
@@ -107,7 +107,129 @@ header .search-container .search-bar .closebtn:hover {
   transition: 0.25s ease-in-out;
 }
 
+header .sidenav-container {
+  height: 100%;
+  width: 100%;
+}
+
+header .sidenav-container .sidenav {
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-x: hidden;
+  padding-top: 65px;
+  background-color: #fff;
+  border-right: 1px solid rgba(190, 189, 189, 0.267);
+  font-family: 'Arimo', sans-serif;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+header .sidenav-container a {
+  display: block;
+  padding: 8px 8px 8px 32px;
+  color: #909494;
+  font-size: 1.03rem;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .sidenav-container a:hover {
+  color: #E50914;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+header .sidenav-container .closebtn {
+  position: absolute;
+  padding: 0;
+  top: 10px;
+  right: 15px;
+  font-size: 2.3rem;
+  color: #909494;
+}
+
+header .sidenav-container .closebtn:hover {
+  color: #bb1e10;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+header .sidenav-container .accordion {
+  padding: 8px 8px 10px 32px;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1.03rem;
+  color: #909494;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .sidenav-container .active,
+header .sidenav-container .accordion:hover {
+  color: #E50914;
+  background-color: rgba(153, 152, 152, 0.144);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+header .sidenav-container .accordion:after {
+  content: '\002B';
+  font-weight: bold;
+  float: right;
+  margin-right: 15px;
+}
+
+header .sidenav-container .active:after {
+  content: "\2212";
+}
+
+header .sidenav-container .panel {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+header .sidenav-container .panel p {
+  right: -25px;
+  font-size: 1.03rem;
+}
+
+header .sidenav-container .panel li {
+  list-style: none;
+}
+
+header .sidenav-container .panel li a {
+  margin-left: -25px;
+  font-size: 1rem;
+}
+
+header .sidenav-container .line {
+  width: 190px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(190, 189, 189, 0.267);
+}
+
 @media (min-width: 769px) {
+  header .topnav-container {
+    padding: 25px;
+  }
+  header .topnav-container .topnav .topnav-center a img {
+    height: 50px;
+  }
   header .topnav-container .topnav .mobile {
     display: inline;
   }
