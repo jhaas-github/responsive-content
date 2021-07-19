@@ -62,6 +62,51 @@ header .topnav-container .topnav .mobile {
   display: none;
 }
 
+header .search-container {
+  width: 100%;
+}
+
+header .search-container .search-bar {
+  height: 82px;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow: hidden;
+  overflow-x: hidden;
+  text-align: center;
+  font-family: 'Arimo', sans-serif;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-right: 1px solid rgba(190, 189, 189, 0.267);
+  background-color: #000;
+}
+
+header .search-container .search-bar .input-search {
+  height: 82px;
+  width: 70vw;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  background-color: #000;
+  color: #fff;
+}
+
+header .search-container .search-bar .closebtn {
+  position: absolute;
+  top: 25%;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+header .search-container .search-bar .closebtn:hover {
+  color: #bb1e10;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
 @media (min-width: 769px) {
   header .topnav-container .topnav .mobile {
     display: inline;

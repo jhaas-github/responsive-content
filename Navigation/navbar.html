@@ -26,11 +26,18 @@
                 <a href="#shop" class="mobile">shop</a>
 
                 <div class="topnav-right">
-                    <a href="#searchMobile" class="desktop"><i class="bi bi-search"></i></a>
+                    <a href="#searchMobile" class="desktop" onclick="openSearch()"><i class="bi bi-search"></i></a>
                     <a href="#cartMobile" class="desktop"><i class="bi bi-bag"></i></a>
                     <a href="#login" class="mobile">login</a>
-                    <a href="#searchDesktop" class="mobile">search</a>
+                    <a href="#searchDesktop" class="mobile" onclick="openSearch()">search</a>
                     <a href="#cartDesktop" class="mobile">cart</a>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <div id="searchBar" class="search-bar">
+                    <input type="search" class="input-search" placeholder="search ..">
+                    <a href="#search" class="closebtn" onclick="closeSearch()">&times;</a>
                 </div>
             </div>
         </div>

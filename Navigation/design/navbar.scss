@@ -64,6 +64,49 @@ header {
             }
         }
     }
+
+    .search-container {
+        width: 100%;
+
+        .search-bar {
+            height: 82px;
+            width: 100%;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            position: fixed;
+            overflow: hidden;
+            overflow-x: hidden;
+            text-align: center;
+            font-family: 'Arimo', sans-serif;
+            transition: 0.2s ease-in-out;
+            border-right: 1px solid rgba(190, 189, 189, 0.267);
+            background-color: #000;
+
+            .input-search {
+                height: 82px;
+                width: 70vw;
+                border: none;
+                outline: none;
+                font-size: 0.95rem;
+                background-color: #000;
+                color: #fff;
+            }
+
+            .closebtn {
+                position: absolute;
+                top: 25%;
+                text-decoration: none;
+                font-size: 2rem;
+                color: #fff;
+            }
+
+            .closebtn:hover {
+                color: #bb1e10;
+                transition: 0.25s ease-in-out;
+            }
+        }
+    }
 }
 
 @media (min-width: 769px) {
